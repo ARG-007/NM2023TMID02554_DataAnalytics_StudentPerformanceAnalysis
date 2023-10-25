@@ -1,255 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>StudEdu</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>StudEdu</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link
+      href="{{ url_for('static', filename='assets/img/spa_icon-transformed.png')}}"
+      rel="icon"
+    />
+    <link
+      href=" {{ url_for('static', filename='assets/img/icon.jpg')}}"
+      rel="apple-touch-icon"
+    />
 
-  <!-- Favicons -->
-  <link href="{{ url_for('static', filename='assets/img/spa_icon-transformed.png')}}" rel="icon">
-  <link href=" {{ url_for('static', filename='assets/img/icon.jpg')}}" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
+    <!-- Vendor CSS Files -->
+    <link
+      href="{{ url_for('static', filename='assets/vendor/aos/aos.css')}}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='assets/vendor/aos/aos.css')}}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css')}}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css')}}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css')}}"
+      rel="stylesheet"
+    />
 
+    <!-- Template Main CSS File -->
+    <link
+      href="{{ url_for('static', filename='assets/css/style.css')}}"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <body>
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex flex-column justify-content-center">
+      <nav id="navbar" class="navbar nav-menu">
+        <ul>
+          <li>
+            <a href="#hero" class="nav-link scrollto active"
+              ><i class="bx bx-home"></i> <span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#about" class="nav-link scrollto"
+              ><i class="bx bx-user"></i> <span>About</span></a
+            >
+          </li>
+          <li>
+            <a href="#resume" class="nav-link scrollto"
+              ><i class="bx bx-file-blank"></i><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="#portfolio" class="nav-link scrollto"
+              ><i class="bx bx-book-content"></i><span>Story</span></a
+            >
+          </li>
+          <li>
+            <a href="#services" class="nav-link scrollto"
+              ><i class="bx bx-server"></i> <span>Report</span></a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link scrollto"
+              ><i class="bx bx-envelope"></i> <span>Contact</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- .nav-menu -->
+    </header>
+    <!-- End Header -->
 
-  <!-- Vendor CSS Files -->
-  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
-
-
-  <!-- Template Main CSS File -->
-  <link href="{{ url_for('static', filename='assets/css/style.css')}}" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i><span>Dashboard</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Story</span></a>
-        </li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Report</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
-
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Student Performance Analysis</h1>
-      <p><span class="typed"
-          data-typed-items="Hello How Was Your Day?, Not A Bad One I Suppose, Anyway Did You Know That, College Placement Takes Lot Of Time, To Make Reasons Up"></span>
-      </p>
-      <div class="social-links">
-        <a href="mailto:2k20cse006@kiot.ac.in" class="facebook"><i class='bx bx-envelope'></i></a>
-        <a href="https://wa.me/919597438992?Hello! How can I help you?" class="google-plus"><i
-            class="bx bxl-whatsapp"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-
-      </div>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About</h2>
-
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Student Performance Analysis</h1>
+        <p>
+          <span
+            class="typed"
+            data-typed-items="Hello How Was Your Day?, Not A Bad One I Suppose, Anyway Did You Know That, College Placement Takes Lot Of Time, To Make Reasons Up"
+          ></span>
+        </p>
+        <div class="social-links">
+          <a href="mailto:2k20cse006@kiot.ac.in" class="facebook"
+            ><i class="bx bx-envelope"></i
+          ></a>
+          <a
+            href="https://wa.me/919597438992?Hello! How can I help you?"
+            class="google-plus"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
+      </div>
+    </section>
+    <!-- End Hero -->
 
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="{{ url_for('static', filename='assets/img/about.jpg')}}" class="img-fluid" alt="" height="400px"
-              width="100%">
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>About</h2>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content">
-            <h3>Student Performance Analysis</h3>
 
-            <ul>
-              <li>Student performance analysis is the process of evaluating and assessing the academic progress of
-                students in a particular educational institution or program.</li>
-              <li>This analysis helps educators and administrators to identify areas where students are excelling or
-                struggling and to make informed decisions about curriculum development, instruction, and student support
-                services.</li>
-              <li>Student performance analysis can also be used to evaluate the effectiveness of teaching methods and
-                instructional materials, and to identify areas where improvements can be made.</li>
-              <li>Additionally, it can inform decisions about resource allocation, such as the allocation of funding for
-                academic programs or professional development for educators.</li>
-              <li>Overall, a student performance analysis system can help schools improve student outcomes, increase
-                graduation rates, and close the achievement gap.</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Dashboard</h2>
-          <p>The dashboard is a key component of data analytics that provides users with a visual representation of
-            relevant data and metrics in a consolidated and easily understandable format. It serves as a centralized hub
-            where users can access and monitor important information, trends, and insights about their data.</p>
-          <iframe
-            src="https://us1.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FStudentPerformance_Dashboard&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018b53044f8e_00000003"
-            width="1080" height="720" frameborder="0" gesture="media" allow="encrypted-media"
-            allowfullscreen=""></iframe>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Story</h2>
-          <p1>Story refers to a narrative or a sequence of events created using data to communicate insights, trends,
-            and findings in a compelling and coherent manner. It involves combining data visualizations, explanations,
-            and context to tell a story that guides the audience through the data analysis process and highlights the
-            key takeaways.</p1>
-          <iframe
-            src="https://us1.ca.analytics.ibm.com/bi/?perspective=story&amp;pathRef=.my_folders%2FStudentPerformance_Story&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;sceneId=model0000018b5537253a_00000003&amp;sceneTime=0"
-            width="1080" height="720" frameborder="0" gesture="media" allow="encrypted-media"
-            allowfullscreen=""></iframe>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Report</h2>
-          <p1>A data analytics report is a comprehensive document that communicates the outcomes of a data analysis
-            initiative. It serves as a means to present and summarize the key findings, trends, patterns, and insights
-            derived from the data. The report provides a structured and systematic overview of the analysis process,
-            ensuring that stakeholders have a clear understanding of the methods employed, the data used, and the
-            results obtained.</p1>
-          <iframe
-            src="https://us1.ca.analytics.ibm.com/bi/?pathRef=.my_folders%2FStudentPerformance_Report&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=run&amp;format=HTML&amp;prompt=false"
-            width="1080" height="720" frameborder="0" gesture="media" allow="encrypted-media"
-            allowfullscreen=""></iframe>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row mt-1">
-
-          <div class="dummy">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>KIOT, Salem</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p><a href="mailto:2k20cse006@kiot.ac.in">2k20cse006@kiot.ac.in</a></p>
-              </div>
-
+          <div class="row">
+            <div class="col-lg-4">
+              <img
+                src="{{ url_for('static', filename='assets/img/about.jpg')}}"
+                class="img-fluid"
+                alt=""
+                height="400px"
+                width="100%"
+              />
             </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Student Performance Analysis</h3>
 
+              <ul>
+                <li>
+                  Student performance analysis is the process of evaluating and
+                  assessing the academic progress of students in a particular
+                  educational institution or program.
+                </li>
+                <li>
+                  This analysis helps educators and administrators to identify
+                  areas where students are excelling or struggling and to make
+                  informed decisions about curriculum development, instruction,
+                  and student support services.
+                </li>
+                <li>
+                  Student performance analysis can also be used to evaluate the
+                  effectiveness of teaching methods and instructional materials,
+                  and to identify areas where improvements can be made.
+                </li>
+                <li>
+                  Additionally, it can inform decisions about resource
+                  allocation, such as the allocation of funding for academic
+                  programs or professional development for educators.
+                </li>
+                <li>
+                  Overall, a student performance analysis system can help
+                  schools improve student outcomes, increase graduation rates,
+                  and close the achievement gap.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+      </section>
+      <!-- End About Section -->
 
+      <!-- ======= Resume Section ======= -->
+      <section id="resume" class="resume">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Dashboard</h2>
+            <p>
+              The dashboard is a key component of data analytics that provides
+              users with a visual representation of relevant data and metrics in
+              a consolidated and easily understandable format. It serves as a
+              centralized hub where users can access and monitor important
+              information, trends, and insights about their data.
+            </p>
+            <iframe
+              src="https://us1.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FStudentPerformance_Dashboard&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018b53044f8e_00000003"
+              width="1080"
+              height="720"
+              frameborder="0"
+              gesture="media"
+              allow="encrypted-media"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Story</h2>
+            <p1
+              >Story refers to a narrative or a sequence of events created using
+              data to communicate insights, trends, and findings in a compelling
+              and coherent manner. It involves combining data visualizations,
+              explanations, and context to tell a story that guides the audience
+              through the data analysis process and highlights the key
+              takeaways.</p1
+            >
+            <iframe
+              src="https://us1.ca.analytics.ibm.com/bi/?perspective=story&amp;pathRef=.my_folders%2FStudentPerformance_Story&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;sceneId=model0000018b5537253a_00000003&amp;sceneTime=0"
+              width="1080"
+              height="720"
+              frameborder="0"
+              gesture="media"
+              allow="encrypted-media"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Report</h2>
+            <p1
+              >A data analytics report is a comprehensive document that
+              communicates the outcomes of a data analysis initiative. It serves
+              as a means to present and summarize the key findings, trends,
+              patterns, and insights derived from the data. The report provides
+              a structured and systematic overview of the analysis process,
+              ensuring that stakeholders have a clear understanding of the
+              methods employed, the data used, and the results obtained.</p1
+            >
+            <iframe
+              src="https://us1.ca.analytics.ibm.com/bi/?pathRef=.my_folders%2FStudentPerformance_Report&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=run&amp;format=HTML&amp;prompt=false"
+              width="1080"
+              height="720"
+              frameborder="0"
+              gesture="media"
+              allow="encrypted-media"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+          </div>
+
+          <div class="row mt-1">
+            <div class="dummy">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>KIOT, Salem</p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>
+                    <a href="mailto:2k20cse006@kiot.ac.in"
+                      >2k20cse006@kiot.ac.in</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <h3>Student Performance Analysis</h3>
+        <p>
+          We value your feedback, questions, and suggestions. Our team is here
+          to assist you and provide the support you need. Please feel free to
+          reach out to us using the contact information below or by filling out
+          the contact form. We look forward to hearing from you!
+        </p>
+        <div class="social-links">
+          <a href="mailto:2k20ece055@kiot.ac.in" class="facebook"
+            ><i class="bx bx-envelope"></i
+          ></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a
+            href="https://wa.me/919597438992?Hello! How can I help you?"
+            class="google-plus"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <div class="copyright">
+          &copy; Copyright <strong><span>StudEdu</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: [license-url] -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+          Designed by <a href="https://bootstrapmade.com/">StudEdu Team</a>
+        </div>
       </div>
-    </section> <!--End Contact Section -->
+    </footer>
+    <!-- End Footer -->
 
-  </main><!-- End #main -->
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Student Performance Analysis</h3>
-      <p>We value your feedback, questions, and suggestions. Our team is here to assist you and provide the support you
-        need. Please feel free to reach out to us using the contact information below or by filling out the contact
-        form. We look forward to hearing from you!</p>
-      <div class="social-links">
-        <a href="mailto:2k20ece055@kiot.ac.in" class="facebook"><i class='bx bx-envelope'></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://wa.me/919597438992?Hello! How can I help you?" class="google-plus"><i
-            class="bx bxl-whatsapp"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>StudEdu</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="https://bootstrapmade.com/">StudEdu Team</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+    <!-- Vendor JS Files -->
+    <script src="{{ url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/typed.js/typed.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/waypoints/noframework.waypoints.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js')}}"></script>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="{{ url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/typed.js/typed.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/waypoints/noframework.waypoints.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js')}}"></script>
-
-  <!-- Template Main JS File -->
-  <script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
-
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
+  </body>
 </html>
